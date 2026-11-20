@@ -1,208 +1,152 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Heang Daro | Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heang Daro | Java Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Heang Daro, a Java full-stack developer. Projects, experience, skills and contact.">
+<meta property="og:title" content="Heang Daro | Java Full-Stack Developer">
+<meta property="og:description" content="Projects, experience, skills and contact.">
+<meta property="og:image" content="daro.jpg">
+<meta name="theme-color" content="#12202B">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>try{var t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-bs-theme",t)}catch(e){}</script>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="88" tabindex="0" class="fs-2">
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90" tabindex="0">
+<a class="skip-link" href="#home">Skip to content</a>
 
-<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
-    <div class="container-fluid"> 
-        <a class="navbar-brand d-flex align-items-center" href="#"> 
-            <img src="earspeaker.jpg" class="rounded-circle me-2" style="width:4em; height:4em;">
-            <span class="fs-1">Daro</span> 
-        </a> 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"> 
-            <span class="navbar-toggler-icon"></span> 
-        </button>
-        <div class="collapse navbar-collapse" id="menu"> 
-            <ul class="navbar-nav ms-auto text-end mx-5 fs-2">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li> 
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Exsperince</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skill">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </div> 
-</nav> 
-
-<section id="home" class="min-vh-100 flex-column justify-content-center align-items-center text-center" style="margin-top:200px;">
-    <img src="daro.jpg" class="rounded-circle img-fluid img-thumbnail mb-3" style="width:7em; height:7em; object-fit:cover;">
-    <h1 class="fw-bold fs-sm-1 ">Hello, I'm Daro</h1>
-    <p class="lead fs-3">
-        Java Full-Stack Developer.<br>
-        I all way research about my skills and technologies.
-    </p>
-    <a href="tg://resolve?domain=heangdaro" class="material-icons display-1 text-decoration-none mt-2">telegram</a>
-    <samp class="fs-3">Contact me on <strong>telegram !</strong>.</samp>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="py-5 d-flex flex-column justify-content-center align-items-center text-center">
-    <h2 class="mb-4 fw-bold fs-sm-1">About Me</h2>
-    <img src="dr.jpg" class="rounded-5 mb-4 img-fluid" style="max-width:90%;">
-    <p class="fs-2 mx-auto" style="max-width:600px;">
-        I am a passionate software and web developer with experience in building web
-        applications and desktop systems.
-    </p>
-</section>
-
-<section id="projects" class="py-5 ">
-    <div class="container">
-        <h2 class="text-center mb-4 fs-2 fs-sm-1 fw-bold">Projects</h2>
-        <div class="row justify-content-center g-4">
-            <div class="col-12 col-md-6 col-lg-4 d-flex">
-                <div class="card h-100 shadow-sm text-center flex-fill">
-                    <div class="card-body">
-                        <h5 class="card-title fs-2 fs-sm-1">Student Management</h5>
-                        <p class="card-text fs-4 fs-sm-2">Java + MySQL + Swing</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 d-flex">
-                <div class="card h-100 shadow-sm text-center flex-fill">
-                    <div class="card-body">
-                        <h5 class="card-title fs-2 fs-sm-1">Library System</h5>
-                        <p class="card-text fs-4 fs-sm-2">Java EE + JSP + Servlet</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 d-flex">
-                <div class="card h-100 shadow-sm text-center flex-fill">
-                    <div class="card-body">
-                        <h5 class="card-title fs-2 fs-sm-1">Web Portfolio</h5>
-                        <p class="card-text fs-4 fs-sm-2">HTML + CSS + Bootstrap</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 d-flex">
-                <div class="card h-100 shadow-sm text-center flex-fill">
-                    <div class="card-body">
-                        <h5 class="card-title fs-2 fs-sm-1">School Management</h5>
-                        <p class="card-text fs-4 fs-sm-2">C/C++ File Datastucture</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 d-flex">
-                <div class="card h-100 shadow-sm text-center flex-fill">
-                    <div class="card-body">
-                        <h5 class="card-title fs-2 fs-sm-1">System Gas Staytion</h5>
-                        <p class="card-text fs-4 fs-sm-2">Java + Swing</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="experience" class="py-5 ">
+<nav id="mainNav" class="navbar navbar-expand-lg fixed-top site-nav">
   <div class="container">
-    <h2 class="text-center mb-5 fs-2 fw-bold">Experience & Education</h2>
-    <div class="position-relative">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+      <img src="earspeaker.jpg" alt="" class="rounded-circle" width="36" height="36"><span>Daro</span>
+    </a>
+    <div class="d-flex align-items-center gap-2 order-lg-2">
+      <button id="toggleBtn" class="icon-btn" type="button" aria-label="Switch to dark theme"><i class="material-icons" id="icon" aria-hidden="true">dark_mode</i></button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Open menu"><span class="navbar-toggler-icon"></span></button>
+    </div>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skill">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-      <div class="position-absolute top-0 start-50 translate-middle-x h-100 border-start border-3 border-dark"></div>
-
-      <div class="row mb-5">
-        <div class="col-12 col-md-6">
-          <div class="card p-3 shadow-sm border border-primary mx-auto" style="max-width: 100%;">
-            <div class="d-flex align-items-center mb-2">
-              <i class="material-icons fs-3 text-primary me-2">work</i>
-              <h6 class="mb-0 text-primary fw-bold text-uppercase small">First Professional Role</h6>
-            </div>
-            <h3 class="h5 fw-bold mb-2">IT Support Office</h3>
-            <p class="text-muted mb-0">
-              My first-ever job, both in life and in the tech field, was an invaluable experience. 
-              I gained knowledge about job aspects and improved programming skills during my free time.
-            </p>
-          </div>
+<main>
+<section id="home" class="hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7 order-2 order-lg-1">
+        <p class="hero-kicker">Java Full-Stack Developer</p>
+        <h1>Hello, I'm Daro.<br>I build web and desktop systems.</h1>
+        <p class="lead">I build applications with Java, Spring and MySQL, and I keep researching new skills and technologies.</p>
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <a class="btn btn-accent" href="#projects">View projects</a>
+          <a class="btn btn-outline-accent" href="#contact">Send a message</a>
+          <a class="btn btn-outline-accent" href="cv.pdf" download>Download CV</a>
         </div>
+        <ul class="social list-unstyled d-flex gap-2 mb-0">
+          <li><a href="https://t.me/heangdaro" target="_blank" rel="noopener" aria-label="Telegram"><i class="material-icons">send</i></a></li>
+          <li><a href="https://github.com/Heang-Daro" target="_blank" rel="noopener" aria-label="GitHub"><svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.71 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0Z"/></svg></a></li>
+        </ul>
       </div>
-
-      <div class="row mb-5 justify-content-md-end">
-        <div class="col-12 col-md-6">
-          <div class="card p-3 shadow-sm border border-success mx-auto" style="max-width: 100%;">
-            <div class="d-flex align-items-center mb-2 justify-content-md-end justify-content-center">
-              <h6 class="mb-0 text-success fw-bold text-uppercase small me-2">Mar 2024 - Assistant Management</h6>
-              <i class="material-icons fs-3 text-success">work</i>
-            </div>
-            <h3 class="h5 fw-bold mb-2 text-md-end text-center">Assistant Management</h3>
-            <p class="text-muted mb-0 text-md-end text-center">
-              Assisted managers with planning, organizing, and coordinating tasks. Managed documents, schedules, and staff coordination.
-            </p>
-          </div>
-        </div>
+      <div class="col-lg-5 order-1 order-lg-2 text-center">
+        <img src="daro.jpg" alt="Portrait of Heang Daro" class="portrait" width="320" height="320">
       </div>
-
-      <div class="row mb-5">
-        <div class="col-12 col-md-6">
-          <div class="card p-3 shadow-sm border border-info mx-auto" style="max-width: 100%;">
-            <div class="d-flex align-items-center mb-2">
-              <i class="material-icons fs-3 text-info me-2">work</i>
-              <h6 class="mb-0 text-info fw-bold text-uppercase small">Apr 2025 - Web Developer</h6>
-            </div>
-            <h3 class="h5 fw-bold mb-2">Web Developer</h3>
-            <p class="text-muted mb-0">
-              Developed responsive websites and web applications using HTML, CSS, Bootstrap, and JavaScript.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mb-5 justify-content-md-end">
-        <div class="col-12 col-md-6">
-          <div class="card p-3 shadow-sm border border-warning mx-auto" style="max-width: 100%;">
-            <div class="d-flex align-items-center mb-2 justify-content-md-end justify-content-center">
-              <h6 class="mb-0 text-warning fw-bold text-uppercase small me-2">2023 - 2026</h6>
-              <i class="material-icons fs-3 text-warning">school</i>
-            </div>
-            <h3 class="h5 fw-bold mb-2 text-md-end text-center">Bachelor's Degree in Computer Science</h3>
-            <p class="text-muted mb-0 text-md-end text-center">
-              Studying computer science, programming, databases, and web development. Completed projects in Java, web apps, and software engineering.
-            </p>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
 
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">About me</h2>
+    <div class="row g-4 align-items-center">
+      <div class="col-md-5"><img src="dr.jpg" alt="Heang Daro at work" class="about-img img-fluid" loading="lazy"></div>
+      <div class="col-md-7">
+        <p class="fs-5">I am a passionate software and web developer with experience in building web applications and desktop systems.</p>
+        <dl class="facts">
+          <div><dt>Role</dt><dd>Java full-stack developer</dd></div>
+          <div><dt>Studying</dt><dd>Bachelor's degree in Computer Science (2023 – 2026)</dd></div>
+          <div><dt>Reach me on</dt><dd>Telegram: @heangdaro</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
 
-<section id="skill" class="p5">
-    <div class="container">
-        <h2 class="text-center mb-4 fs-2 fs-sm-1 fw-bold">Skills</h2>
-        <div class="row justify-content-center g-3">
+<section id="projects" class="section alt">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <div id="filters" class="d-flex flex-wrap gap-2 mb-4" role="group" aria-label="Filter projects"></div>
+    <div id="projectGrid" class="row g-4"></div>
+  </div>
+</section>
 
-            <div class="col-6 col-md-4 col-lg-4 d-flex">
-                <div class="card text-white bg-primary border border-dark h-100 flex-fill text-center">
-                    <div class="card-body d-flex justify-content-center align-items-center">
-                        <h5 class="card-title fs-4">JAVA</h5>
-                    </div>
-                </div>
-            </div>
+<section id="experience" class="section">
+  <div class="container">
+    <h2 class="section-title">Experience &amp; education</h2>
+    <ol id="timeline" class="timeline list-unstyled"></ol>
+  </div>
+</section>
 
-            <div class="col-6 col-md-4 col-lg-4 d-flex">
-                <div class="card text-white bg-secondary border border-dark h-100 flex-fill text-center">
-                    <div class="card-body d-flex justify-content-center align-items-center">
-                        <h5 class="card-title fs-4">Spring</h5>
-                    </div>
-                </div>
-            </div>
+<section id="skill" class="section alt">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div id="skillGroups" class="row g-4"></div>
+  </div>
+</section>
 
-            <div class="col-6 col-md-4 col-lg-4 d-flex">
-                <div class="card text-white bg-success border border-dark h-100 flex-fill text-center">
-                    <div class="card-body d-flex justify-content-center align-items-center">
-                        <h5 class="card-title fs-4">JSP</h5>
+<section id="contact" class="section">
+  <div class="container">
+    <h2 class="section-title">Contact me</h2>
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <p class="fs-5">Have a project or a question? Send a message and I will reply to the email you give.</p>
+        <ul class="list-unstyled contact-list">
+          <li><i class="material-icons" aria-hidden="true">send</i><a href="https://t.me/heangdaro" target="_blank" rel="noopener">Telegram: @heangdaro</a></li>
+          <li><i class="material-icons" aria-hidden="true">code</i><a href="https://github.com/Heang-Daro" target="_blank" rel="noopener">github.com/Heang-Daro</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-7">
+        <form id="contactForm" novalidate>
+          <div class="form-floating mb-3"><input class="form-control" id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required><label for="name">Your name</label><div class="invalid-feedback">Enter your name.</div></div>
+          <div class="form-floating mb-3"><input class="form-control" id="email" name="email" type="email" placeholder="Your email" autocomplete="email" required><label for="email">Your email</label><div class="invalid-feedback">Enter a valid email address.</div></div>
+          <div class="form-floating mb-3"><input class="form-control" id="title" name="title" type="text" placeholder="Subject" required><label for="title">Subject</label><div class="invalid-feedback">Enter a subject.</div></div>
+          <div class="form-floating mb-3"><textarea class="form-control" id="message" name="message" placeholder="Message" style="height:150px" maxlength="1000" required></textarea><label for="message">Message</label><div class="invalid-feedback">Write a message.</div></div>
+          <button id="sendBtn" class="btn btn-accent w-100" type="submit"><span class="label">Send message</span></button>
+          <div id="status" class="mt-3" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<button id="toTop" class="to-top" type="button" aria-label="Back to top"><i class="material-icons" aria-hidden="true">arrow_upward</i></button>
+
+<footer class="site-footer">
+  <div class="container text-center">
+    <p class="mb-1">© 2026 Heang Daro. All rights reserved.</p>
+    <p class="mb-0 small">Use a real email address in the contact form so I can reply.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="data.js"></script>
+</body>
+</html>ard-title fs-4">JSP</h5>
                     </div>
                 </div>
             </div>
